@@ -26,7 +26,7 @@ int* get_pointer() {
   //  Whatever is stored on the stack is deleted after it goes out of scope.
 
   int x = 100;
-  return &x;
+  return &x; // dangling pointer once it goes out of scope
 }
 
 
@@ -60,7 +60,7 @@ int main() {
     func();
 
     int* p = get_pointer();
-    cout << *p << endl;
+    cout << *p << endl; // accessing a dangling pointer
 
     store_large_array_in_stack();
     store_large_array_in_heap();
