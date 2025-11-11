@@ -1,2 +1,3 @@
-# cpp_stuff
-stuff to understand cpp concepts
+## C++ concepts
+
+Basic scripts and notes to understand C++ concepts. Explore, Implement, Break.
